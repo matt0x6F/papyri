@@ -1,12 +1,5 @@
-<script setup>
+<script setup lang="ts">
 
-</script>
-
-<script>
-export default {
-  name: 'Settings',
-  components: {}
-}
 </script>
 
 <template>

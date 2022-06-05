@@ -1,0 +1,25 @@
+name: release
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        build: [
+          { name: Papyri, platform: linux/amd64, os: ubuntu-latest },
+          { name: Papyri, platform: windows/amd64, os: windows-latest },
+          { name: Papyri, platform: darwin/universal, os: macos-latest }
+        ]
+    runs-on: ${{ matrix.build.os }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: 'Build Linux'
+      uses: 'dAppServer/wails-build-action@v2'
+      with:
+        build-name: ${{ matrix.build.name }}
+        build-platform: ${{ matrix.build.platform }}
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - v*
