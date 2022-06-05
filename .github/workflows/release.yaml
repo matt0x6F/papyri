@@ -3,6 +3,7 @@ jobs:
   build:
     strategy:
       fail-fast: false
+      max-parallel: 3
       matrix:
         build: [
           { name: Papyri, platform: linux/amd64, os: ubuntu-latest },
@@ -12,7 +13,7 @@ jobs:
     runs-on: ${{ matrix.build.os }}
     steps:
       - uses: actions/checkout@v2
-      - name: 'Build Linux'
+      - name: 'Build ${{ matrix.build.platform }}'
         uses: 'dAppServer/wails-build-action@v2'
         with:
           build-name: ${{ matrix.build.name }}
