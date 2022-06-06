@@ -1,3 +1,5 @@
+# Project specific
+build/
 
 # Created by https://www.toptal.com/developers/gitignore/api/vuejs,visualstudiocode,intellij,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=vuejs,visualstudiocode,intellij,node
