@@ -1,3 +1,4 @@
+project_name: Papyri
 builds:
   - skip: true
 changelog:
@@ -107,5 +108,3 @@ release:
   # These globs can also include templates.
   #
   # Defaults to empty.
- extra_files:
-   - glob: ./build/bin/**
