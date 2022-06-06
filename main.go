@@ -12,6 +12,14 @@ import (
 	"github.com/mattouille/papyri/database"
 )
 
+// integration points with goreleaser
+var (
+	version = "dev"
+	commit  = "none"
+	date    = "unknown"
+	builtBy = "unknown"
+)
+
 func main() {
 	log.Debug().Strs("args", os.Args).Msg("Arguments passed")
 
