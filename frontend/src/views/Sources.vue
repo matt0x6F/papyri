@@ -1,17 +1,8 @@
-<script setup>
+<script setup lang="ts">
 import firefoxLogo from "../assets/images/Firefox_logo_2019.svg"
 import chromeLogo from "../assets/images/Google_Chrome_icon_(September_2014).svg"
 import hnLogo from "../assets/images/hacker-news-square-custom.svg"
 import githubLogo from "../assets/images/github.svg"
-import { BrowserOpenURL } from '../../wailsjs/runtime'
-</script>
-
-<script>
-export default {
-  name: 'Sources',
-  components: {},
-
-}
 </script>
 
 <template>

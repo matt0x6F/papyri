@@ -5,6 +5,8 @@
   "frontend:build": "npm run build",
   "frontend:dev:watcher": "npm run dev",
   "frontend:dev:serverUrl": "http://localhost:3000",
+  "assetdir": "frontend/dist",
+  "wailsjsdir": "frontend/src",
   "author": {
     "name": "Matt Ouille",
     "email": "matt.ouille@protonmail.com"
