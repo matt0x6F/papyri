@@ -1,3 +1,4 @@
+project_name: Papyri
 builds:
   - skip: true
 changelog:
@@ -29,6 +30,9 @@ changelog:
       order: 0
     - title: 'Bug fixes'
       regexp: "^.*Fix[(\\w)]*:+.*$"
+      order: 1
+    - title: 'Tasks'
+      regexp: "^.*Task[(\\w)]*:+.*$"
       order: 1
     - title: Others
       order: 999
@@ -93,13 +97,13 @@ release:
 
   # You can change the name of the release.
   # Default is `{{.Tag}}` on OSS and `{{.PrefixedTag}}` on Pro.
-  name_template: "{{.ProjectName}}-v{{.Version}} {{.Env.USER}}"
+  name_template: "{{.ProjectName}} v{{.Version}}"
 
   # You can disable this pipe in order to not create the release on any SCM.
   # Keep in mind that this might also break things that depens on the release URL, for instance, homebrew taps.
   #
   # Defaults to false.
-  disable: true
+  disable: false
 
   # You can add extra pre-existing files to the release.
   # The filename on the release will be the last part of the path (base).
@@ -107,9 +111,3 @@ release:
   # These globs can also include templates.
   #
   # Defaults to empty.
-#  extra_files:
-#    - glob: ./path/to/file.txt
-#    - glob: ./glob/**/to/**/file/**/*
-#    - glob: ./glob/foo/to/bar/file/foobar/override_from_previous
-#    - glob: ./single_file.txt
-#      name_template: file.txt # note that this only works if glob matches 1 file only
