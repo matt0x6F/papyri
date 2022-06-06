@@ -20,7 +20,5 @@ jobs:
           build-platform: ${{ matrix.build.platform }}
 on:
   push:
-    branches:
-      - main
     tags:
       - v*
