@@ -99,7 +99,7 @@ release:
   # Keep in mind that this might also break things that depens on the release URL, for instance, homebrew taps.
   #
   # Defaults to false.
-  disable: true
+  disable: false
 
   # You can add extra pre-existing files to the release.
   # The filename on the release will be the last part of the path (base).
