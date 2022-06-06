@@ -31,6 +31,9 @@ changelog:
     - title: 'Bug fixes'
       regexp: "^.*Fix[(\\w)]*:+.*$"
       order: 1
+    - title: 'Tasks'
+      regexp: "^.*Task[(\\w)]*:+.*$"
+      order: 1
     - title: Others
       order: 999
 
@@ -94,7 +97,7 @@ release:
 
   # You can change the name of the release.
   # Default is `{{.Tag}}` on OSS and `{{.PrefixedTag}}` on Pro.
-  name_template: "{{.ProjectName}}-v{{.Version}} {{.Env.USER}}"
+  name_template: "{{.ProjectName}} v{{.Version}}"
 
   # You can disable this pipe in order to not create the release on any SCM.
   # Keep in mind that this might also break things that depens on the release URL, for instance, homebrew taps.
