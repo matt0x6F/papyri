@@ -21,7 +21,7 @@
     "vue": "^3.2.36",
     "vue-feather": "^2.0.0",
     "vue-router": "^4.0.15",
-    "vue-tsc": "^0.36.1",
+    "vue-tsc": "^0.40.13",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
