@@ -7,7 +7,7 @@ require (
 	github.com/google/uuid v1.3.0
 	github.com/rs/zerolog v1.26.1
 	github.com/wailsapp/wails/v2 v2.0.0-beta.37
-	go.etcd.io/bbolt v1.3.6
+	go.etcd.io/bbolt v1.3.7
 )
 
 require (
@@ -30,7 +30,7 @@ require (
 	github.com/wailsapp/mimetype v1.4.1 // indirect
 	golang.org/x/crypto v0.0.0-20211215165025-cf75a172585e // indirect
 	golang.org/x/net v0.0.0-20211015210444-4f30a5c0130f // indirect
-	golang.org/x/sys v0.0.0-20220114195835-da31bd327af9 // indirect
+	golang.org/x/sys v0.4.0 // indirect
 	golang.org/x/text v0.3.7 // indirect
 )
 
